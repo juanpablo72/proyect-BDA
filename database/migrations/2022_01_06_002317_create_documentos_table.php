@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDatosRepresentantesTable extends Migration
+class CreateDocumentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateDatosRepresentantesTable extends Migration
      */
     public function up()
     {
-        Schema::create('datos_representantes', function (Blueprint $table) {
+        Schema::create('documentos', function (Blueprint $table) {
             $table->id();
-            $table->string('ci');
-            $table->string('nombrerep');
-            $table->string('direccion');
-            $table->string('telefono');
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ class CreateDatosRepresentantesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('datos_representantes');
+        Schema::dropIfExists('documentos');
     }
 }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\representante;
+use App\Models\documentos;
 use Illuminate\Http\Request;
 
-class RepresentanteController extends Controller
+class DocumentosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,16 +13,6 @@ class RepresentanteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -41,21 +31,10 @@ class RepresentanteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\representante  $representante
+     * @param  \App\Models\documentos  $documentos
      * @return \Illuminate\Http\Response
      */
-    public function show(representante $representante)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\representante  $representante
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(representante $representante)
+    public function show(documentos $documentos)
     {
         //
     }
@@ -64,10 +43,10 @@ class RepresentanteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\representante  $representante
+     * @param  \App\Models\documentos  $documentos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, representante $representante)
+    public function update(Request $request, documentos $documentos)
     {
         //
     }
@@ -75,10 +54,10 @@ class RepresentanteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\representante  $representante
+     * @param  \App\Models\documentos  $documentos
      * @return \Illuminate\Http\Response
      */
-    public function destroy(representante $representante)
+    public function destroy(documentos $documentos)
     {
         //
     }
