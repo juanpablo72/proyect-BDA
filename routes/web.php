@@ -6,6 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('upload', [App\Http\Controllers\HomeController::class, 'handle']);
+
 Auth::routes();
 //
 

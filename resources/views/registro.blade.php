@@ -21,7 +21,7 @@
 @endif
 
 		<br>
-		<form action="/registroestudent" method="Post">
+		<form action="/upload" method="Post">
 			@csrf
 			<div class="row">
 
