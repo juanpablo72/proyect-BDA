@@ -6,8 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('upload', [App\Http\Controllers\HomeController::class, 'handle']);
-
+Route::apiResource('image', App\Http\Controllers\DocumentosController::class);
 Auth::routes();
 //
 
@@ -15,14 +14,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/registrar', function () {
     return view('registro');
 });
+Route::get('/registro_fotografico', function () {
+    return view('registro_fotografico');
+});
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'getuser'])->middleware('can:admin.index')->name('admin');
 
-Route::get('/buscar', function () {
-    return view('buscar');
-});
-Route::get('/filtrar', function () {
-    return view('filtrar');
-});
 Route::get('/lista', [App\Http\Controllers\HomeController::class, 'index1'])->middleware('can:admin.index')->name('lista');
 
 Route::get('/eliminar/{id}', [App\Http\Controllers\HomeController::class, 'eliminar'])->middleware('can:admin.index')->name('eliminar');

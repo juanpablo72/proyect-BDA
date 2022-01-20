@@ -15,6 +15,7 @@ class CreateDocumentosTable extends Migration
     {
         Schema::create('documentos', function (Blueprint $table) {
             $table->id();
+            $table->string('id_user');
             $table->string('status');
             $table->string('sol_academica');
             $table->string('rec_academico');

@@ -69,16 +69,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $datos = DB::table('representantes')
-
-            ->join('datos_representantes', 'datos_representantes.ci', '=', 'representantes.cirep')
-
-            ->join('datos_estudiantes', 'datos_estudiantes.ciest', '=', 'representantes.ciest')
-            ->join('curso_estudiantes', 'curso_estudiantes.ciest', '=', 'representantes.ciest')
-            ->select('datos_representantes.nombrerep', 'representantes.ciest', 'datos_representantes.telefono', 'representantes.cirep', 'datos_estudiantes.nombre', 'datos_estudiantes.apellidos', 'curso_estudiantes.codmat', 'curso_estudiantes.secmat', 'datos_estudiantes.edad', 'datos_estudiantes.correo', 'datos_estudiantes.id')
-            ->get();
-        //return $datos;
-        return view('home')->with('datos', $datos);
+        return view('home');
     }
     public function index1()
     {

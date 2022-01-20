@@ -31,11 +31,11 @@
           <a class="nav-link active text-light" aria-current="page" href="/registrar"><b>gestion de grados</b> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="/registrar"><b>manejo de registro fotografico</b> </a>
+          <a class="nav-link active text-light" aria-current="page" href="/registro_fotografico"><b>manejo de registro fotografico</b> </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="/registrar"><b>gestion de Documentos</b> </a>
+          <a class="nav-link active text-light" aria-current="page" href="/registro_fotografico"><b>gestion de Documentos</b> </a>
         </li>
 
    @else
